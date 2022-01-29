@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Occurencedigit {
+    public static void Occured(int num,int find)
+    {
+        int rem,sum=0,count=0;
+        int n=num;
+        while(n!=0)
+        {
+            rem=n%10;
+           
+            if(rem == find)
+            {
+                count++;
+            }
+            n=n/10;
+            
+        }
+        System.out.println(count);
+    }    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num,find;
+        num = sc.nextInt();
+        find = sc.nextInt();
+        Occured(num,find);
+    
+    }
+}
+
