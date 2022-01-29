@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Harshadnum {
+    public static void Harshad(int num)
+    {
+        int sum=0,rem;
+        int n = num;
+       while(n!=0)
+       {
+           rem=n%10;
+           sum=sum+rem;
+           n=n/10;
+       }
+       if(num%sum==0){
+       
+           System.out.println("Harshad Number");
+       }
+       else
+       {
+           System.out.println("Not a Harshad Number");
+       }
+
+
+    }
+
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int num;
+    num = sc.nextInt();
+    Harshad(num);
+
+}
+}
