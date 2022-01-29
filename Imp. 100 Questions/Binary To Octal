@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Binarytooctal {
+    public static void Occur(long num)
+    {
+        long rem,sum=0;
+        long n=num;
+        int base =2;
+        int i=0;
+        while(n!=0)
+        {
+            rem=n%10;
+            sum +=rem*Math.pow(base,i);
+            n=n/10;
+            i++;
+        }
+        System.out.println(sum);
+    }    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long num;
+        num = sc.nextLong();
+        Occur(num);
+    
+    }
+}
